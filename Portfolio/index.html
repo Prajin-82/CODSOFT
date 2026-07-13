@@ -1,1 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajin V | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Prajin V, a BE Computer Science & Engineering (AI & ML) student and Full-Stack Java Developer. Detail-oriented developer specializing in Java, Spring Boot, PostgreSQL, and Machine Learning.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Prajin<span>.V</span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="hero-subtitle">Welcome to my universe</p>
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Prajin V</span></h1>
+                <h2 class="hero-job">
+                    I am a <span class="typewriter" id="typewriter"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="hero-desc">
+                    A motivated BE Computer Science & Engineering (AI & ML) student and passionate Full-Stack Java
+                    Developer. Building scalable web solutions and intelligent systems from Madurai, India.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <a href="#about"><i class="fa-solid fa-chevron-down floating-arrow"></i></a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <div class="image-border-glow">
+                            <img src="assets/prajin.png" alt="Prajin V" class="profile-img">
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <h3>Pursuing Excellence in Tech</h3>
+                        <p class="bio-text">
+                            I am currently pursuing my Bachelor of Engineering in Computer Science & Engineering,
+                            specializing in **Artificial Intelligence & Machine Learning** at **SRM Madurai College for
+                            Engineering and Technology**.
+                        </p>
+                        <p class="bio-text">
+                            With a strong foundation in Core Java, Data Structures & Algorithms, and PostgreSQL, I
+                            specialize in building complete, end-to-end full-stack web applications. I bridge the gap
+                            between robust backend architectures (using Spring Boot) and interactive frontend systems.
+                        </p>
+                        <div class="personal-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Madurai, Tamil Nadu, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>BE in CSE (AI & ML)</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="#resume" class="btn btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Get
+                                Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" class="journey-section scroll-reveal">
+            <div class="section-container">
+                <div class="journey-badge-container">
+                    <span class="journey-badge">Growth Path</span>
+                </div>
+                <h2 class="section-title journey-title">My Journey</h2>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item cyan-glow">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content-wrapper">
+                            <span class="timeline-date">2023 — Present</span>
+                            <div class="timeline-card">
+                                <h3>BE — Computer Science & Engineering (AI & ML)</h3>
+                                <h4>SRM Madurai College for Engineering and Technology</h4>
+                                <p>Specializing in AI and ML alongside core CSE fundamentals. Building strong skills in
+                                    Java, DSA, web development, and machine learning through academic projects and
+                                    professional training programs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item violet-glow">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content-wrapper">
+                            <span class="timeline-date">Training</span>
+                            <div class="timeline-card">
+                                <h3>Full Stack Java Development — Professional Training at Magizhchi Software,Madurai</h3>
+                                <h4>Industry Training Program</h4>
+                                <p>Hands-on experience with Java, DSA, SQL, and web technologies. Built real-time mini
+                                    projects following industry-standard practices and architectural patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item violet-glow">
+                        <div class="timeline-node"></div>
+                        <div class="timeline-content-wrapper">
+                            <span class="timeline-date">Academic Training</span>
+                            <div class="timeline-card">
+                                <h3>AI & Machine Learning — Academic Training</h3>
+                                <h4>SRM Madurai College for Engineering and Technology</h4>
+                                <p>Focused study on supervised and unsupervised learning concepts, data preprocessing
+                                    pipelines, and model evaluation methodologies through practical assignments and
+                                    projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">My professional toolkit and areas of technical expertise</p>
+                <div class="skills-grid">
+                    <div class="skills-card">
+                        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Languages</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Core Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li><span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="card-icon"><i class="fa-solid fa-sitemap"></i></div>
+                        <h3>DSA</h3>
+                        <p class="card-desc">Arrays, Strings, Linked Lists, Stack, Queue, Searching & Sorting
+                            algorithms.</p>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Web / Frontend</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">HTML5 / CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </li>
+                            <li><span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li><span class="skill-name">REST API Basics</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3>Backend</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Spring Boot</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Database</h3>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">PostgreSQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li><span class="skill-name">SQL (Joins, Queries)</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-card">
+                        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI & ML</h3>
+                        <p class="card-desc">Machine Learning Concepts, Supervised & Unsupervised Learning, Data
+                            Preprocessing.</p>
+                    </div>
+
+                    <div class="skills-card wide-card">
+                        <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Tools & Dev Environments</h3>
+                        <div class="tags-container">
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">IntelliJ IDEA</span>
+                            <span class="tag">Postman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world applications I have built end-to-end</p>
+                <div class="projects-grid">
+                    <!-- Fork & Flame -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge">Full Stack</span>
+                                <h3 class="project-title">Fork & Flame</h3>
+                            </div>
+                            <h4 class="project-subtitle">Restaurant Management System</h4>
+                            <p class="project-desc">
+                                A comprehensive, full-stack restaurant management web application. Designed an
+                                enterprise-grade Layered Architecture (Controller &rarr; Service &rarr; Repository) to
+                                handle kitchen operations, cart flows, table bookings, and bill generation.
+                            </p>
+                            <ul class="project-bullet-points">
+                                <li>Implemented core modules: authentication, main dashboard, and table reservations.
+                                </li>
+                                <li>Structured menu management, staff tracking, and order/cart checkout flows.</li>
+                                <li>Programmed automated billing calculations integrated with live tax estimates.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">HTML5/CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge">Full Stack</span>
+                                <h3 class="project-title">Aura</h3>
+                            </div>
+                            <h4 class="project-subtitle">E-Commerce Web Platform</h4>
+                            <p class="project-desc">
+                                A feature-rich online shopping web platform. Structured a highly scalable product
+                                catalog backend and implemented smooth user-facing shopping operations.
+                            </p>
+                            <ul class="project-bullet-points">
+                                <li>Designed layered controller-service-repository patterns to support high catalogs.
+                                </li>
+                                <li>Developed fluid product listing and dynamic sorting/browsing features.</li>
+                                <li>Implemented interactive shopping cart mechanisms and a complete checkout flow.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">HTML5/CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">My Resume</h2>
+                <div class="resume-showcase">
+                    <div class="resume-info">
+                        <h3>Prajin V</h3>
+                        <p class="resume-summary-text">
+                            Download the official single-page resume or open the print-ready, high-fidelity PDF layout
+                            in a new tab.
+                        </p>
+                        <div class="resume-actions-grid">
+                            <a href="assets/resume.png" download="Prajin_V_Resume.png" class="btn btn-primary">
+                                <i class="fa-solid fa-download"></i> Download Resume (PNG)
+                            </a>
+                            <a href="resume.html" target="_blank" class="btn btn-secondary">
+                                <i class="fa-solid fa-file-pdf"></i> View & Save PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Feel free to reach out for internship opportunities or collaborations</p>
+                <div class="contact-grid">
+                    <div class="contact-details-cards">
+                        <a href="https://wa.me/917449032605" target="_blank" class="contact-card-link">
+                            <div class="contact-method-card whatsapp">
+                                <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+                                <h3>WhatsApp Chat</h3>
+                                <p>+91 74490 32605</p>
+                                <span class="card-action">Message me <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:vprajin77@gmail.com" class="contact-card-link">
+                            <div class="contact-method-card email">
+                                <div class="icon-circle"><i class="fa-regular fa-envelope"></i></div>
+                                <h3>Email Address</h3>
+                                <p>vprajin77@gmail.com</p>
+                                <span class="card-action">Send an email <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Prajin-82" target="_blank" class="contact-card-link">
+                            <div class="contact-method-card github">
+                                <div class="icon-circle"><i class="fa-brands fa-github"></i></div>
+                                <h3>GitHub Profile</h3>
+                                <p>github.com/Prajin-82</p>
+                                <span class="card-action">Explore repos <i class="fa-solid fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" required
+                                    placeholder="Hi Prajin, I'd like to collaborate..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full" id="form-submit">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="form-feedback" class="form-feedback hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Prajin V. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://wa.me/917449032605" target="_blank" title="WhatsApp"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:vprajin77@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/Prajin-82" target="_blank" title="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

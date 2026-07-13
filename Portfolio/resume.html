@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajin V - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --dark: #0f172a;
+            --gray-light: #f8fafc;
+            --gray-border: #cbd5e1;
+            --text-dark: #334155;
+            --text-muted: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.5;
+            background-color: #f1f5f9;
+            padding: 40px 20px;
+        }
+
+        .actions-bar {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-back {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .btn-back:hover {
+            color: var(--primary);
+        }
+
+        .btn-print {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.2s;
+        }
+
+        .btn-print:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .resume-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .resume-header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .resume-section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--gray-border);
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+
+        .profile-desc {
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+
+        .edu-item,
+        .job-item {
+            margin-bottom: 12px;
+        }
+
+        .edu-item:last-child,
+        .job-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .item-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .item-desc {
+            font-size: 0.85rem;
+            margin-left: 16px;
+            color: var(--text-dark);
+        }
+
+        .item-desc li {
+            margin-bottom: 4px;
+        }
+
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+
+        .skills-table tr {
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .skills-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .skills-table td {
+            padding: 6px 0;
+            vertical-align: top;
+        }
+
+        .skill-category {
+            font-weight: 700;
+            color: var(--dark);
+            width: 160px;
+        }
+
+        .skill-values {
+            color: var(--text-dark);
+        }
+
+        .soft-skills-container {
+            font-size: 0.88rem;
+            font-weight: 550;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .soft-skill-badge {
+            background-color: var(--gray-light);
+            border: 1px solid var(--gray-border);
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .actions-bar {
+                display: none;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="actions-bar">
+        <a href="index.html" class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <button onclick="window.print()" class="btn-print">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+        </button>
+    </div>
+
+    <div class="resume-container">
+        <header class="resume-header">
+            <h1 class="name">PRAJIN V</h1>
+            <div class="title">BE Computer Science & Engineering (AI & ML) | Full-Stack Java Developer</div>
+            <div class="contact-info">
+                <span><i class="fa-solid fa-phone"></i> +91 74490 32605</span>
+                <span><i class="fa-solid fa-envelope"></i> <a
+                        href="mailto:vprajin77@gmail.com">vprajin77@gmail.com</a></span>
+                <span><i class="fa-solid fa-location-dot"></i> Madurai, Tamil Nadu, India</span>
+                <span><i class="fa-brands fa-github"></i> <a href="https://github.com/Prajin-82"
+                        target="_blank">github.com/Prajin-82</a></span>
+                <span><i class="fa-solid fa-globe"></i> <a href="https://prajinv-portfolio.vercel.app"
+                        target="_blank">prajinv-portfolio.vercel.app</a></span>
+            </div>
+        </header>
+
+        <section class="resume-section">
+            <h2 class="section-title">Profile</h2>
+            <p class="profile-desc">
+                Motivated BE CSE (AI & ML) graduate with strong foundations in Core Java, Full-Stack Web Development,
+                PostgreSQL, and Data Structures & Algorithms. Hands-on experience building full-stack applications
+                end-to-end, including a restaurant management system and an e-commerce web platform. Seeking an
+                entry-level software development role to apply strong problem-solving skills and technical expertise to
+                build scalable, real-world applications.
+            </p>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-item">
+                <div class="item-header">
+                    <span>BE – Computer Science and Engineering (AI & ML)</span>
+                    <span>Currently Pursuing</span>
+                </div>
+                <div class="item-subheader">
+                    <span>SRM Madurai College for Engineering and Technology</span>
+                    <span>Madurai, TN, India</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <table class="skills-table">
+                <tr>
+                    <td class="skill-category">Languages:</td>
+                    <td class="skill-values">Core Java, Python</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">DSA:</td>
+                    <td class="skill-values">Arrays, Strings, Linked Lists, Stack, Queue, Searching & Sorting</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">Web:</td>
+                    <td class="skill-values">HTML5, CSS3, JavaScript, REST API Basics</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">Backend:</td>
+                    <td class="skill-values">Spring Boot</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">Database:</td>
+                    <td class="skill-values">PostgreSQL (SQL, Joins, Queries)</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">AI/ML:</td>
+                    <td class="skill-values">ML Concepts, Supervised & Unsupervised Learning, Data Preprocessing</td>
+                </tr>
+                <tr>
+                    <td class="skill-category">Tools:</td>
+                    <td class="skill-values">Git, GitHub, VS Code</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Projects</h2>
+            <div class="job-item">
+                <div class="item-header">
+                    <span>Fork & Flame – Restaurant Management System</span>
+                    <span>Full Stack</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Technologies: Spring Boot, PostgreSQL, HTML, CSS, JavaScript</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Built a full-stack restaurant management web application using Spring Boot, PostgreSQL, and
+                        HTML, CSS, and JavaScript.</li>
+                    <li>Designed a complete Controller &rarr; Service &rarr; Repository layered architecture for
+                        maintainability and scalability.</li>
+                    <li>Implemented core modules including authentication, dashboard, menu management, table &
+                        reservation management, staff management, order/cart flow, and billing with tax calculation.
+                    </li>
+                </ul>
+            </div>
+            <div class="job-item" style="margin-top: 14px;">
+                <div class="item-header">
+                    <span>Aura – E-Commerce Website</span>
+                    <span>Full Stack</span>
+                </div>
+                <div class="item-subheader">
+                    <span>Technologies: Spring Boot, PostgreSQL, HTML, CSS, JavaScript</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Developed a full-stack e-commerce web application using Spring Boot, PostgreSQL, and HTML, CSS,
+                        and JavaScript.</li>
+                    <li>Designed a layered Controller &rarr; Service &rarr; Repository architecture to support a
+                        scalable product catalog.</li>
+                    <li>Implemented core shopping features including product listing/catalog browsing, shopping cart
+                        management, and a checkout flow.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Internship / Training</h2>
+            <!-- Intern 1 -->
+            <div class="job-item">
+                <div class="item-header">
+                    <span>Web Development Intern</span>
+                    <span>CodSoft</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Gained hands-on experience in web development, working on real-time tasks and projects.</li>
+                </ul>
+            </div>
+            <div class="job-item" style="margin-top: 10px;">
+                <div class="item-header">
+                    <span>Full Stack Development Course</span>
+                    <span>Magizhchi Software, Madurai</span>
+                </div>
+                <ul class="item-desc">
+                    <li>Completed a comprehensive full-stack development course covering Java, web technologies, and
+                        database management.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <h2 class="section-title">Soft Skills</h2>
+            <div class="soft-skills-container">
+                <span class="soft-skill-badge">Problem Solving</span>
+                <span class="soft-skill-badge">Quick Learner</span>
+                <span class="soft-skill-badge">Team Collaboration</span>
+                <span class="soft-skill-badge">Communication</span>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
