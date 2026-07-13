@@ -1,1 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Cup - Premium Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-mug-hot"></i> Mystic Cup
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#contact" class="btn btn-nav">Order Now</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-container container">
+            <div class="hero-content fade-in-element">
+                <span class="subtitle">Welcome to Mystic Cup</span>
+                <h1 class="hero-title">Freshly Brewed Coffee Every Morning</h1>
+                <p class="hero-description">
+                    Start your day with our hand-crafted, premium-sourced coffee. Experience the rich aroma and exquisite taste brewed by passionate baristas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#contact" class="btn btn-secondary">Visit Us</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper fade-in-element">
+                <img src="images/hero.jpg" alt="Coffee Cup on Wooden Table" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section section-padding" id="menu">
+        <div class="container">
+            <div class="section-header text-center fade-in-element">
+                <span class="section-subtitle">Our Specialities</span>
+                <h2 class="section-title">Featured Coffee Menu</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card fade-in-element">
+                    <div class="menu-img-box">
+                        <img src="images/cappuccino.jpg" alt="Cappuccino">
+                    </div>
+                    <div class="menu-card-info">
+                        <h3 class="menu-item-name">Cappuccino</h3>
+                        <p class="menu-item-desc">Rich espresso with warm steamed milk and a thick layer of velvety foam.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">₹179</span>
+                            <a href="#contact" class="btn btn-card">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card fade-in-element">
+                    <div class="menu-img-box">
+                        <img src="images/espresso.jpg" alt="Espresso">
+                    </div>
+                    <div class="menu-card-info">
+                        <h3 class="menu-item-name">Espresso</h3>
+                        <p class="menu-item-desc">A bold, intense shot of pure concentrated coffee with a rich golden crema.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">₹199</span>
+                            <a href="#contact" class="btn btn-card">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card fade-in-element">
+                    <div class="menu-img-box">
+                        <img src="images/latte.jpg" alt="Latte">
+                    </div>
+                    <div class="menu-card-info">
+                        <h3 class="menu-item-name">Latte</h3>
+                        <p class="menu-item-desc">Smooth espresso poured over creamy steamed milk, finished with light foam.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">₹149</span>
+                            <a href="#contact" class="btn btn-card">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card fade-in-element">
+                    <div class="menu-img-box">
+                        <img src="images/mocha.jpg" alt="Mocha">
+                    </div>
+                    <div class="menu-card-info">
+                        <h3 class="menu-item-name">Mocha</h3>
+                        <p class="menu-item-desc">A chocolate lover's dream combining rich espresso, chocolate, and milk.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">₹199</span>
+                            <a href="#contact" class="btn btn-card">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card fade-in-element">
+                    <div class="menu-img-box">
+                        <img src="images/cold-coffee.jpg" alt="Cold Coffee">
+                    </div>
+                    <div class="menu-card-info">
+                        <h3 class="menu-item-name">Cold Coffee</h3>
+                        <p class="menu-item-desc">Chilled brewed coffee blended with sweet milk, ice, and a rich chocolate drizzle.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">₹179</span>
+                            <a href="#contact" class="btn btn-card">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card fade-in-element">
+                    <div class="menu-img-box">
+                        <img src="images/americano.jpg" alt="Americano">
+                    </div>
+                    <div class="menu-card-info">
+                        <h3 class="menu-item-name">Americano</h3>
+                        <p class="menu-item-desc">Classic espresso shots balanced with hot water for a clean and robust flavor.</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">₹169</span>
+                            <a href="#contact" class="btn btn-card">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section section-padding bg-light" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-img-box fade-in-element">
+                    <img src="images/about.jpg" alt="Cozy Cafe Interior">
+                </div>
+                <div class="about-content fade-in-element">
+                    <span class="section-subtitle">Our Story</span>
+                    <h2 class="section-title">Brewing Love & Joy Since 2015</h2>
+                    <p class="about-text">
+                        Mystic Cup started as a small coffee cart and grew into a cozy sanctuary for coffee enthusiasts. We believe that a great cup of coffee has the power to bring people together, inspire ideas, and brighten your day.
+                    </p>
+                    <p class="about-text">
+                        Our journey is built on our commitment to sourcing premium organic beans and crafting exceptional beverages that warm the soul.
+                    </p>
+                    <ul class="about-highlights">
+                        <li>
+                            <div class="highlight-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <strong>Premium Beans:</strong> We source only single-origin and organic specialty coffee beans.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="highlight-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <strong>Expert Baristas:</strong> Our baristas are certified experts who brew every cup with perfection.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="highlight-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <strong>Cozy Environment:</strong> A welcoming modern space with free Wi-Fi and relaxing music.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header text-center fade-in-element">
+                <span class="section-subtitle">Visual Delights</span>
+                <h2 class="section-title">Photo Gallery</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-element">
+                    <img src="images/gallery-1.jpg" alt="Barista pouring latte art">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Art of Brewing</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in-element">
+                    <img src="images/gallery-2.jpg" alt="Delicious cafe croissant pastry">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Fresh Pastries</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in-element">
+                    <img src="images/gallery-3.jpg" alt="Cozy wooden cafe corner">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Cozy Spaces</span>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in-element">
+                    <img src="images/gallery-4.jpg" alt="Customers enjoying coffee together">
+                    <div class="gallery-overlay">
+                        <span class="gallery-text">Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section section-padding bg-light" id="reviews">
+        <div class="container">
+            <div class="section-header text-center fade-in-element">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card fade-in-element">
+                    <div class="review-header">
+                        <img src="images/user-1.jpg" alt="John Doe" class="user-photo">
+                        <div>
+                            <h4 class="user-name">John Doe</h4>
+                            <div class="user-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Mystic Cup has become my go-to spot for working and relaxing. Their Cappuccino is hands down the best in town! The staff is friendly, and the vibes are unmatched."
+                    </p>
+                </div>
+
+                <div class="review-card fade-in-element">
+                    <div class="review-header">
+                        <img src="images/user-2.jpg" alt="Jane Smith" class="user-photo">
+                        <div>
+                            <h4 class="user-name">Jane Smith</h4>
+                            <div class="user-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "The atmosphere is so peaceful, and the mocha is absolutely divine. Sourcing premium beans really shows in the taste. Highly recommend checking this place out!"
+                    </p>
+                </div>
+
+                <div class="review-card fade-in-element">
+                    <div class="review-header">
+                        <img src="images/user-3.jpg" alt="Alex Johnson" class="user-photo">
+                        <div>
+                            <h4 class="user-name">Alex Johnson</h4>
+                            <div class="user-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "If you appreciate good coffee and pastries, this is the cafe for you. The baristas are super knowledgeable and treat brewing like a science. 5 out of 5 stars!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="section-header text-center fade-in-element">
+                <span class="section-subtitle">Reach Us</span>
+                <h2 class="section-title">Visit Mystic Cup</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Left: Contact Details and Hours -->
+                <div class="contact-info fade-in-element">
+                    <h3 class="contact-subtitle">Get In Touch</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>12 West Tower Street, Madurai Main, Madurai, Tamil Nadu 625001</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 7449032605</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@mysticcup.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p><strong>Monday - Friday:</strong> 8:00 AM – 9:00 PM</p>
+                            <p><strong>Saturday - Sunday:</strong> 9:00 AM – 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map fade-in-element">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.1383794356494!2d78.11718047587848!3d9.922116073667586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c582b1189539%3A0x172602d205bda34!2sArulmigu%20Meenakshi%20Amman%20Temple!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container container text-center fade-in-element">
+            <h2 class="cta-title">Ready for your next cup of coffee?</h2>
+            <p class="cta-desc">Get it hot, fresh, and customized to your exact liking. Order online or visit us today!</p>
+            <a href="#contact" class="btn btn-primary btn-cta">Order Now</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#home" class="footer-logo">
+                    <i class="fa-solid fa-mug-hot"></i> Mystic Cup
+                </a>
+                <p class="footer-desc">
+                    Sourcing premium single-origin beans to brew the perfect cup of joy, every single morning.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-col-title">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Mystic Cup. All rights reserved. Designed with passion for coffee lovers.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
